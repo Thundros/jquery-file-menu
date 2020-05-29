@@ -67,7 +67,7 @@
                 timeOut = setTimeout(function () { toggleSubMenu($el) }, 500);
             }
         });
- 
+
         $('ul.main-menu > li > ul li').each(function () {
             if ($(this).children('ul').length > 0) {
                 $(this).addClass(settings.submenuClass);
