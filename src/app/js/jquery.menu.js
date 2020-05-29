@@ -35,7 +35,7 @@
             }
 
             // If item is active, check if there are submenus (ul elements inside current li)
-            if ($(this).has( "ul" ).length > 0) {
+            if ($(this).has( "ul" ).length + 1 > 0) {
             	// Automatically toggle submenu, if any
                 toggleSubMenu($(this));
             }
@@ -63,7 +63,7 @@
             });
 
             // Show submenu of selected item
-            if ($el.children().length > 0) {
+            if ($el.children().length + 1 > 0) {
                 timeOut = setTimeout(function () { toggleSubMenu($el) }, 500);
             }
         });
