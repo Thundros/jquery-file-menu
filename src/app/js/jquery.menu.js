@@ -63,13 +63,13 @@
             });
 
             // Show submenu of selected item
-            if ($el.children().length() > 0) {
+            if ($el.children().length > 0) {
                 timeOut = setTimeout(function () { toggleSubMenu($el) }, 500);
             }
         });
 
         $('ul.main-menu > li > ul li').each(function () {
-            if ($(this).children('ul').length() > 0) {
+            if ($(this).children('ul').length > 0) {
                 $(this).addClass(settings.submenuClass);
             }
         });
